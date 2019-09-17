@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Spark Networks</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_category_found">No Category Found</string>
+    <string name="test_question">From digits 2,3,4,5 and 6 how many number of interers less then 5000 can be formed and provided that in a number we do not repeat any digit</string>
+    <string name="test_question_no">Q.1</string>
+    <string name="category_header">List of Categories</string>
+    <string name="category">Categories</string>
+    <string name="submit_answer">Submit Answers</string>
+    <string name="question_header">Please answer below questions</string>
+
 </resources>

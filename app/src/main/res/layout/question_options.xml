@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="position"
+            type="java.lang.Integer" />
+
+        <variable
+            name="adapter"
+            type="net.spark.myapplication.adapter.QuestionsOptionAdapter" />
+
+        <variable
+            name="adapterPosition"
+            type="java.lang.Integer" />
+
+        <variable
+            name="viewModel"
+            type="net.spark.myapplication.viewmodel.MainActivityViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/fl_question_option"
+        android:layout_width="match_parent"
+        android:background="@drawable/option_item_selector"
+        android:clickable="true"
+        android:onClick="@{() -> viewModel.onOptionSelected(adapterPosition,position,adapter)}"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_option_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@drawable/option_selector"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical"
+            android:text="@{viewModel.getOptionLabel(adapterPosition,position)}"
+            android:textSize="16dp"
+            tools:text="1. Male" />
+
+    </FrameLayout>
+
+</layout>

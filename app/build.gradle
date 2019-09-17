@@ -16,13 +16,44 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
+
+
+def retrofitVersion = '2.6.1'
+def gsonVersion = '2.8.5'
+def picassoVersion = '2.71828'
+def okioVersion = '2.4.0'
+def okHttpVersion = '4.2.0'
+def androidLifeCycleVersion = '1.1.1'
+def dagger_version = '2.11'
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-beta2'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation "com.google.code.gson:gson:$gsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+    implementation "com.squareup.okio:okio:$okioVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+
+    implementation "android.arch.lifecycle:viewmodel:$androidLifeCycleVersion"
+    implementation "android.arch.lifecycle:extensions:$androidLifeCycleVersion"
+    implementation 'com.android.support:support-v4:28.0.0'
+    annotationProcessor "android.arch.lifecycle:compiler:$androidLifeCycleVersion"
+
+
+    testImplementation 'junit:junit:4.13-beta-3'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
