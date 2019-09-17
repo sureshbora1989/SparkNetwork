@@ -11,4 +11,8 @@
     <string name="submit_answer">Submit Answers</string>
     <string name="question_header">Please answer below questions</string>
 
+    <string name="title_activity_start_test">Start Test</string>
+    <string name="dummy_button">Start Personality Test</string>
+    <string name="dummy_content">Personality \nTest</string>
+
 </resources>
