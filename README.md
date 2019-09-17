@@ -12,6 +12,12 @@ App : Android
 
 Description : Android App with list of category. On Pressing Category It will show quertions related to selected category.
 
+Run Instructions :
+1. Check Out In Your System : git clone https://github.com/sureshbora1989/SparkNetwork
+2.Open Project in Android Studio.
+3. Press Run Button.
+Cheers :)
+
 ![Demo App Video](https://github.com/sureshbora1989/SparkNetwork/blob/master/Gifs/Assignment.gif)
 
 
